@@ -1,0 +1,16 @@
+from djitellopy import Tello
+t = Tello()
+
+t.connect()
+t.takeoff()
+
+def move_forward():
+    t.move_forward(50)
+    t.move_back(50)
+
+def move_back():
+    t.move_back(50)
+    t.move_forward(50)
+
+move_forward()
+move_back()
